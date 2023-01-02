@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+    <div class="box"></div>
+    <div class="boxed" style="overflow-y: scroll">
+      <div>
+        <div>
+          <section style="background-color: #eee;">
+            <div class="container py-5">
+          
+              <div class="row d-flex justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-6">
+          
+                  <div class="card" id="chat2">
+                    <div class="card-header d-flex justify-content-between align-items-center p-3">
+                      <h5 class="mb-0">Chat</h5>
+                      <!-- <button type="button" class="btn btn-primary btn-sm" data-mdb-ripple-color="dark">Let's Chat
+                        App</button> -->
+
+                        <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" id="languageDropDown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="caret"></span>
+                            Languages
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="languageDropDown" style="overflow-y: scroll; height: 1000%;">
+                            
+                            <li><a class="dropdown-item" href="#">Albanian</a></li>
+                            <li><a class="dropdown-item" href="#">Amharic</a></li>
+                            <li><a class="dropdown-item" href="#">Arabic</a></li>
+                            <li><a class="dropdown-item" href="#">Armenian</a></li>
+                            <li><a class="dropdown-item" href="#">Assamese</a></li>
+                            <li><a class="dropdown-item" href="#">Azerbaijani (Latin)</a></li>
+                            <li><a class="dropdown-item" href="#">Bangla</a></li>
+                            <li><a class="dropdown-item" href="#">Bashkir</a></li>
+                            <li><a class="dropdown-item" href="#">Basque</a></li>
+                            <li><a class="dropdown-item" href="#">Bosnian (Latin)</a></li>
+                            <li><a class="dropdown-item" href="#">Bulgarian</a></li>
+                            <li><a class="dropdown-item" href="#">Cantonese (Traditional)</a></li>
+                            <li><a class="dropdown-item" href="#">Catalan</a></li>
+                            <li><a class="dropdown-item" href="#">Chinese (Literary)</a></li>
+                            <li><a class="dropdown-item" href="#">Chinese Simplified</a></li>
+                            <li><a class="dropdown-item" href="#">Chinese Traditional</a></li>
+                            <li><a class="dropdown-item" href="#">Croatian</a></li>
+                            <li><a class="dropdown-item" href="#">Czech</a></li>
+                            <li><a class="dropdown-item" href="#">Danish</a></li>
+                            <li><a class="dropdown-item" href="#">Dari</a></li>
+                            <li><a class="dropdown-item" href="#">Divehi</a></li>
+                            <li><a class="dropdown-item" href="#">Dutch</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Estonian</a></li>
+                            <li><a class="dropdown-item" href="#">Faroese</a></li>
+                            <li><a class="dropdown-item" href="#">Fijian</a></li>
+                            <li><a class="dropdown-item" href="#">Filipino</a></li>
+                            <li><a class="dropdown-item" href="#">Finnish</a></li>
+                            <li><a class="dropdown-item" href="#">French</a></li>
+                            <li><a class="dropdown-item" href="#">French (Canada)</a></li>
+                            <li><a class="dropdown-item" href="#">Galician</a></li>
+                            <li><a class="dropdown-item" href="#">Georgian</a></li>
+                            <li><a class="dropdown-item" href="#">German</a></li>
+                            <li><a class="dropdown-item" href="#">Greek</a></li>
+                            <li><a class="dropdown-item" href="#">Gujarati</a></li>
+                            <li><a class="dropdown-item" href="#">Haitian Creole</a></li>
+                            <li><a class="dropdown-item" href="#">Hebrew</a></li>
+                            <li><a class="dropdown-item" href="#">Hindi</a></li>
+                            <li><a class="dropdown-item" href="#">Hmong Daw (Latin)</a></li>
+                            <li><a class="dropdown-item" href="#">Hungarian</a></li>
+                            <li><a class="dropdown-item" href="#">Icelandic</a></li>
+                            <li><a class="dropdown-item" href="#">Indonesian</a></li>
+                            <li><a class="dropdown-item" href="#">Inuinnaqtun</a></li>
+                            <li><a class="dropdown-item" href="#">Inuktitut</a></li>
+                            <li><a class="dropdown-item" href="#">Inuktitut (Latin)</a></li>
+                            <li><a class="dropdown-item" href="#">Irish</a></li>
+                            <li><a class="dropdown-item" href="#">Italian</a></li>
+                            <li><a class="dropdown-item" href="#">Japanese</a></li>
+                            <li><a class="dropdown-item" href="#">Kannada</a></li>
+                            <li><a class="dropdown-item" href="#">Kazakh</a></li>
+                            <li><a class="dropdown-item" href="#">Khmer</a></li>
+                            <li><a class="dropdown-item" href="#">Klingon</a></li>
+                            <li><a class="dropdown-item" href="#">Klingon (plqaD)</a></li>
+                            <li><a class="dropdown-item" href="#">Korean</a></li>
+                            <li><a class="dropdown-item" href="#">Kurdish (Central)</a></li>
+                            <li><a class="dropdown-item" href="#">Kurdish (Northern)</a></li>
+                            <li><a class="dropdown-item" href="#">Kyrgyz (Cyrillic)</a></li>
+                            <li><a class="dropdown-item" href="#">Lao</a></li>
+                            <li><a class="dropdown-item" href="#">Latvian</a></li>
+                            <li><a class="dropdown-item" href="#">Lithuanian</a></li>
+                            <li><a class="dropdown-item" href="#">Macedonian</a></li>
+                            <li><a class="dropdown-item" href="#">Malagasy</a></li>
+                            <li><a class="dropdown-item" href="#">Malay (Latin)</a></li>
+                            <li><a class="dropdown-item" href="#">Malayalam</a></li>
+                            <li><a class="dropdown-item" href="#">Maltese</a></li>
+                            <li><a class="dropdown-item" href="#">Maori</a></li>
+                            <li><a class="dropdown-item" href="#">Marathi</a></li>
+                            <li><a class="dropdown-item" href="#">Mongolian (Cyrillic)</a></li>
+                            <li><a class="dropdown-item" href="#">Mongolian (Traditional)</a></li>
+                            <li><a class="dropdown-item" href="#">Myanmar</a></li>
+                            <li><a class="dropdown-item" href="#">Nepali</a></li>
+                            <li><a class="dropdown-item" href="#">Norwegian</a></li>
+                            <li><a class="dropdown-item" href="#">Odia</a></li>
+                            <li><a class="dropdown-item" href="#">Pashto</a></li>
+                            <li><a class="dropdown-item" href="#">Persian</a></li>
+                            <li><a class="dropdown-item" href="#">Polish</a></li>
+                            <li><a class="dropdown-item" href="#">Portuguese (Brazil)</a></li>
+                            <li><a class="dropdown-item" href="#">Portuguese (Portugal)</a></li>
+                            <li><a class="dropdown-item" href="#">Punjabi</a></li>
+                            <li><a class="dropdown-item" href="#">Queretaro Otomi</a></li>
+                            <li><a class="dropdown-item" href="#">Romanian</a></li>
+                            <li><a class="dropdown-item" href="#">Russian</a></li>
+                            <li><a class="dropdown-item" href="#">Samoan (Latin)</a></li>
+                            <li><a class="dropdown-item" href="#">Serbian (Cyrillic)</a></li>
+                            <li><a class="dropdown-item" href="#">Serbian (Latin)</a></li>
+                            <li><a class="dropdown-item" href="#">Slovak</a></li>
+                            <li><a class="dropdown-item" href="#">Slovenian</a></li>
+                            <li><a class="dropdown-item" href="#">Somali (Arabic)</a></li>
+                            <li><a class="dropdown-item" href="#">Spanish</a></li>
+                            <li><a class="dropdown-item" href="#">Swahili (Latin)</a></li>
+                            <li><a class="dropdown-item" href="#">Swedish</a></li>
+                            <li><a class="dropdown-item" href="#">Tahitian</a></li>
+                            <li><a class="dropdown-item" href="#">Tamil</a></li>
+                            <li><a class="dropdown-item" href="#">Tatar (Latin)</a></li>
+                            <li><a class="dropdown-item" href="#">Telugu</a></li>
+                            <li><a class="dropdown-item" href="#">Thai</a></li>
+                            <li><a class="dropdown-item" href="#">Tibetan</a></li>
+                            <li><a class="dropdown-item" href="#">Tigrinya</a></li>
+                            <li><a class="dropdown-item" href="#">Tongan</a></li>
+                            <li><a class="dropdown-item" href="#">Turkish</a></li>
+                            <li><a class="dropdown-item" href="#">Turkmen (Latin)</a></li>
+                            <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                            <li><a class="dropdown-item" href="#">Upper Sorbian</a></li>
+                            <li><a class="dropdown-item" href="#">Urdu</a></li>
+                            <li><a class="dropdown-item" href="#">Uyghur (Arabic)</a></li>
+                            <li><a class="dropdown-item" href="#">Uzbek (Latin</a></li>
+                            <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+                            <li><a class="dropdown-item" href="#">Welsh</a></li>
+                            <li><a class="dropdown-item" href="#">Yucatec Maya</a></li>
+                            <li><a class="dropdown-item" href="#">Zulu</a></li>
+                            <!-- <li><a class="dropdown-item" href="#"></a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="card-body" data-mdb-perfect-scrollbar="true" id="chatbox" style="position: relative; height: 400px; overflow:scroll">
+          
+                    </div>
+                    <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+                      <img class="px-1" src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
+                        alt="avatar 3" style="width: 40px; height: 100%;">
+                      <input type="text" class="form-control form-control-lg px-2" id="userInput"
+                        placeholder="Type message">
+                      <a class="ms-1 text-muted" href="#!"><i class="fas fa-paperclip"></i></a>
+                      <a class="ms-3 text-muted" href="#!"><i class="fas fa-smile"></i></a>
+                      <a class="ms-3" href="#!"><i class="fas fa-paper-plane"></i></a>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+          
+            </div>
+          </section>
+        </div>
+        <!-- <div id="userInput">
+          <input id="textInput" type="text" name="msg" placeholder="Type here..." />
+        </div> -->
+      </div>
+      <script>
+
+        var code = 'NONE'
+        var level = 0
+
+          $('.dropdown-menu a').click(function(){
+            //  console.log($(this));
+            //  text = $(this).parents('.btn-group').find('.dropdown-toggle')
+            text = $(this).text();
+            console.log(text);
+
+            $.get("/changelanguage", { language: text}).done(function(data) {
+              var botHtml = '<div class="d-flex flex-row justify-content-start mb-4"> <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;"> <div> <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">' + data + '</p> </div> </div>'
+              $(this).parents('.btn-group').find('.dropdown-toggle').html(text+' <span class="caret"></span>');
+            });
+
+
+          });
+
+        function getBotResponse() {
+          var rawText = $("#userInput").val();
+          console.log(rawText)
+          var userHtml = '<div class="d-flex flex-row justify-content-end"> <div> <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">' + rawText + '</p> </div> <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;"> </div>';
+          
+          $("#userInput").val("");
+          $("#chatbox").append(userHtml);
+
+          document
+            .getElementById("userInput")  
+            .scrollIntoView({ block: "start", behavior: "smooth" });
+
+// WORK OUT THE CODE OF INPUT HERE
+
+          // $.get("/getcode", {}).done(function(data) {
+          //   code = data.code;
+          //   // console.log(code);
+          // });
+
+          $.get("/get", { msg: rawText, currentCode: code, currentLevel: level }).done(function(data) {
+              var botHtml = '<div class="d-flex flex-row justify-content-start mb-4"> <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp" alt="avatar 1" style="width: 45px; height: 100%;"> <div> <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">' + data + '</p> </div> </div>'
+              $("#chatbox").append(botHtml);
+              var msg = new SpeechSynthesisUtterance(data);
+              msg.voice = speechSynthesis.getVoices(10)[2];
+              if (msg.voice != None)
+                window.speechSynthesis.speak(msg);
+              document
+                .getElementById("userInput")
+                .scrollIntoView({ block: "start", behavior: "smooth" });
+            });
+          
+          console.log(code);
+          var chatBox = document.getElementById("chatbox");
+          chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        
+
+        var rawText  = $
+        // console.log("lol")
+        // print("Lol")
+
+        $("#userInput").keypress(function(e) {
+          // console.log(code);
+          if (e.which == 13) {
+            
+            getBotResponse();
+          }
+        });
+      </script>
+    </div>
+
+    {% endblock %}
