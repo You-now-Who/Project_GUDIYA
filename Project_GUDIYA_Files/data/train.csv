@@ -1,0 +1,84 @@
+Text,Intents
+hi,GREETINGS
+ hello,GREETINGS
+ hey,GREETINGS
+ helloo,GREETINGS
+ hellooo,GREETINGS
+ g morining,GREETINGS
+ gmorning,GREETINGS
+ good morning,GREETINGS
+ morning,GREETINGS
+ good day,GREETINGS
+ good afternoon,GREETINGS
+ good evening,GREETINGS
+ greetings,GREETINGS
+ greeting,GREETINGS
+ good to see you,GREETINGS
+ its good seeing you,GREETINGS
+ how is life been treating you,GREETINGS
+ how's life been treating you,GREETINGS
+ how have you been,GREETINGS
+ how've you been,GREETINGS
+ what is up,GREETINGS
+ what's up,GREETINGS
+ what is cracking,GREETINGS
+ what's cracking,GREETINGS
+ what is good,GREETINGS
+ what's good,GREETINGS
+ what is happening,GREETINGS
+ what's happening,GREETINGS
+ what is new,GREETINGS
+ what's new,GREETINGS
+ what is neww,GREETINGS
+ gday,GREETINGS
+ howdy,GREETINGS
+cheers,GREETINGS
+Not really,CONVERSATION
+yes,CONVERSATION
+ yea,CONVERSATION
+sure,CONVERSATION
+ok,CONVERSATION
+ go ahead,CONVERSATION
+ fine,CONVERSATION
+ okay,CONVERSATION
+no,CONVERSATION
+ nope,CONVERSATION
+ naw,CONVERSATION
+ nah,CONVERSATION
+ don't,CONVERSATION
+ stop,CONVERSATION
+ not,CONVERSATION
+ no thanks,CONVERSATION
+ no thank you,CONVERSATION
+ no thanks,CONVERSATION
+ not really,CONVERSATION
+Do you like Harry Potter,CONVERSATION
+What do you think of,CONVERSATION
+What's the most interesting thing you've read lately?,CONVERSATION
+What's a fact about you that's not on the internet?,CONVERSATION
+Do you listen to any podcasts? Which ones?,CONVERSATION
+"If you were in charge of the playlist, which song would you play next?",CONVERSATION
+What's the best gift you've ever gotten?,CONVERSATION
+What's your favorite part about living in [city]? Least favorite?,CONVERSATION
+Are there any common misconceptions about your job?,CONVERSATION
+Why did you come tonight?,CONVERSATION
+"If you had to sum up this event in three words, which would they be?",CONVERSATION
+Are there any upcoming events you're planning on going to?,CONVERSATION
+What conference  real or imaginary  would you absolutely hate to miss?,CONVERSATION
+"If you were giving a presentation, what would the topic be?",CONVERSATION
+Great [shoes/haircut/shirt]! Where'd you get it?,CONVERSATION
+I'm trying to plan my next trip  have you traveled anywhere interesting lately?,CONVERSATION
+What is your favorite food,CONVERSATION
+What is your favorite color,CONVERSATION
+I want to become a doctor when I grow up,CODE_CAREER
+I want to become a scientist when I grow up,CODE_CAREER
+My career,CODE_CAREER
+How do I become a doctor,CODE_CAREER
+How do I beome a scientist,CODE_CAREER
+My career,CODE_CAREER
+Who are some famous women,CODE_WOMAN
+Famous woman,CODE_WOMAN
+Role models,CODE_WOMAN
+list some iconic women in STEM who have had a major impact in their field?,CODE_WOMAN
+Can you name some famous female scientists in STEM?,CODE_WOMAN
+Pretty Woman,CODE_WOMAN
